@@ -12,22 +12,18 @@ A FastAPI-based MCP server that provides YouTube video metadata and transcripts 
 - Python 3.10+
 - See `pyproject.toml` for dependencies (uses FastAPI, yt-dlp, youtube-transcript-api, fastapi-mcp, etc.)
 
-## Installation
+## Installation (Dependencies)
+
+The dependencies are specified in `pyproject.toml`. You can install them using either pip or uv:
 
 ```bash
-# Clone the repository
-git clone https://github.com/meh313/youtube-mcp.git
-cd youtube-mcp
+# Using pip
+pip install .
+# or, to install directly from pyproject.toml
+pip install -e .
 
-# (Recommended) Create a virtual environment
-python -m venv .venv
-.venv\Scripts\activate  # On Windows
-# or
-source .venv/bin/activate  # On Linux/Mac
-
-# Install dependencies
-pip install -r requirements.txt  # or use 'uv pip install -r requirements.txt' if you use uv
-# Or use pyproject.toml with pip or uv
+# Using uv (recommended for speed)
+uv pip install -e .
 ```
 
 ## Usage
