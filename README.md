@@ -59,7 +59,7 @@ GET /youtube-info?video_id=l6TrXxqSzrE
     "publish_date": "20250505",
     "length": 91,
     "views": 25,
-    "keywords": ["n8n", "AI chatbot", ...],
+    "keywords": ["n8n", "AI chatbot", "..."],
     "channel_url": "https://www.youtube.com/channel/UCUevUDRxTDJCoG1KxQveXag",
     "thumbnail": "https://i.ytimg.com/vi/l6TrXxqSzrE/maxresdefault.jpg"
   },
