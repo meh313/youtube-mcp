@@ -79,6 +79,22 @@ To use this server as a tool in Cursor:
    ```
 3. Restart Cursor. The `/youtube-info` tool will be available in the tool list.
 
+### Integration with Other MCP Clients
+
+To integrate this MCP server with any other MCP-compatible client:
+1. Ensure the server is running and accessible (default: `http://localhost:8000`).
+2. In your MCP client's configuration, add a tool entry pointing to the MCP endpoint:
+   ```json
+   "youtube": {
+     "url": "http://localhost:8000/mcp"
+   }
+   ```
+   - Replace `localhost` with your server's address if running remotely.
+   - The endpoint `/mcp` exposes the YouTube info tool for all MCP clients.
+3. Restart or reload your MCP client as needed. The YouTube tool should now be available for use.
+
+Refer to your specific MCP client's documentation for details on configuring external tools.
+
 ## License
 
 MIT License
